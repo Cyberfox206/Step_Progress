@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello</title>
+</head>
+
+<body>
+  <main>
+    <div id="div_choose">
+      <ul>
+        <li id="choose_title_container"><span id="choose_title">Choose title</span></li>
+        <li id="choose_description"><span id="choose_description">Choose description</span></li>
+        <li id="choose_confirm"><span id="choose_confirm">Confirm data</span></li>
+      </ul>
+    </div>
+    <div id="auser">
+      <p id="text_contenu"></p>
+      <button type="button" id="submit_btn" class="btn_all">
+        Submit title
+      </button>
+      <button type="button" id="back_btn" class="btn_all">
+        Back
+      </button>
+      <button type="button" id="description_btn" class="btn_all">
+        Submit description
+      </button>
+      <button type="button" id="no_btn" class="btn_all">
+        No, go back
+      </button>
+      <button type="button" id="yes_btn" class="btn_all">
+        yes, go ahead
+      </button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
 </html>
